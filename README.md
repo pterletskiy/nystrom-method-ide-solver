@@ -6,7 +6,7 @@ This repository implements the **Nyström Method** to solve linear and nonlinear
 
 We aim to determine a function $y \in C^2[a, b]$ that satisfies the general integro-differential equation:
 
-$$y''(x) + \alpha(x)y'(x) + \beta(x)y(x) + \int_a^b K(x,t)y(t) \ dt = f(x), x \in ]a,b[$$
+$$y''(x) + \alpha(x)y'(x) + \beta(x)y(x) + \int_a^b K(x,t)y(t) \ dt = f(x), \quad x \in ]a,b[$$
 
 with boundary conditions:
 $$y(a) = y(b) = 0$$
@@ -38,7 +38,7 @@ In collaboration with group members, the project was extended to handle:
 * **Nonlinear Kernels:** Solving equations where $K$ depends on $y(t)$, i.e., $K(x, t, y(t))$.
 * **Newton's Method:** Implementing iterative solvers for the resulting nonlinear systems.
 
-$$y''(x) + \int_0^1 \frac{e^{x + t}}{1 + y(t)^2} y(t) \, dt = x$$
+$$y''(x) + \int_0^1 \frac{e^{x + t}}{1 + y(t)^2} \quad y(t) \ dt = x$$
 
 ---
 
@@ -52,9 +52,8 @@ $$y''(x) + \int_0^1 \frac{e^{x + t}}{1 + y(t)^2} y(t) \, dt = x$$
 
 ## 📂 Project Structure
 * `NMF_Project.ipynb`: Full implementation, from linear solvers to nonlinear Newton iterations.
-* `Project-Assignment.pdf`: Formal description of the numerical problems.
-* `images/`: Plots showing numerical solutions and convergence rates.
+* `NMF_Project_Description.pdf`: Formal description of the numerical problems.
+* `visualizations/`: Plots showing numerical solutions and convergence rates.
 
 ---
-**Authors:** [Petr Terletskiy](https://www.linkedin.com/in/petr-terletskiy/) (Lead on Parts A & B), Rodrigo Jesus, Tiago Monteiro.  
-**Context:** Master's in Mathematical Finance (ISEG - 2024/25)
+**Authors:** [Petr Terletskiy](https://www.linkedin.com/in/petr-terletskiy/) (Lead on Parts A & B), Tiago Monteiro (Part C) & Rodrigo Jesus (Part D). 
