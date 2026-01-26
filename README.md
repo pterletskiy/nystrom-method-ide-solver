@@ -28,8 +28,14 @@ To validate the model, I performed a rigorous error analysis using an exact solu
 * **Order of Convergence:** Verified the relationship between grid size $h$ and the global error.
 * **Scheme Comparison:** Evaluated how different finite difference schemes (Central vs. One-sided) impact the accuracy and stability of the Nyström method.
 
-![Convergence Analysis](images/convergence_plot.png)
-*Figure: Error decay for different numerical schemes.*
+![Convergence Analysis 1](visualizations/central_scheme_results.png)
+*Figure 1: Error decay and Convergence Order for the Central scheme.*
+
+![Convergence Analysis 2](visualizations/backward_scheme_results.png)
+*Figure 2: Error decay and Convergence Order for the Backward scheme.*
+
+![Convergence Analysis 3](visualizations/forward_scheme_results.png)
+*Figure 3: Error decay and Convergence Order for the Forward scheme.*
 
 ---
 
